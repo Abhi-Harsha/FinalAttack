@@ -35,12 +35,12 @@ class Character {
     }
     
     init (StartingHP: Int, AttackPower: Int) {
-        self._hp = StartingHP
-        self._attackPwr = AttackPower
+        _hp = StartingHP
+        _attackPwr = AttackPower
     }
     
     func AttemptAttack() -> Bool {
-        self._hp -= AttackPwr
+        _hp -= AttackPwr
         
         return true
     }
