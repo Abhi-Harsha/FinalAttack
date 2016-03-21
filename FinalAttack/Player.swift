@@ -17,11 +17,11 @@ class Player : Character {
         }
     }
     
-    private var _inventory = [String]()
-    
-    var Inventory: [String] {
-        get {
-            return _inventory
+    override func AttemptAttack() -> Bool {
+        if super.AttemptAttack() {
+            return true
+        } else {
+            return false
         }
     }
     

@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A07547B61C9F299A00C6EEAF /* Kimara.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07547B51C9F299A00C6EEAF /* Kimara.swift */; };
+		A07547B81C9F29E900C6EEAF /* DevilWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07547B71C9F29E900C6EEAF /* DevilWizard.swift */; };
 		A07566B91C96159900B4BF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07566B81C96159900B4BF65 /* AppDelegate.swift */; };
 		A07566BB1C96159900B4BF65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07566BA1C96159900B4BF65 /* ViewController.swift */; };
 		A07566BE1C96159900B4BF65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07566BC1C96159900B4BF65 /* Main.storyboard */; };
 		A07566C01C96159900B4BF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07566BF1C96159900B4BF65 /* Assets.xcassets */; };
 		A07566C31C96159900B4BF65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07566C11C96159900B4BF65 /* LaunchScreen.storyboard */; };
+		A0799CF61C9B232B002F85B6 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0799CF51C9B232B002F85B6 /* Enemy.swift */; };
 		A080B73C1C98A11C000CF337 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A080B73B1C98A11C000CF337 /* Player.swift */; };
 		A092FB661C974064003B1879 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092FB651C974064003B1879 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A07547B51C9F299A00C6EEAF /* Kimara.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kimara.swift; sourceTree = "<group>"; };
+		A07547B71C9F29E900C6EEAF /* DevilWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevilWizard.swift; sourceTree = "<group>"; };
 		A07566B51C96159900B4BF65 /* FinalAttack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalAttack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07566B81C96159900B4BF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A07566BA1C96159900B4BF65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		A07566BF1C96159900B4BF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A07566C21C96159900B4BF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A07566C41C96159900B4BF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0799CF51C9B232B002F85B6 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		A080B73B1C98A11C000CF337 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A092FB651C974064003B1879 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +72,9 @@
 				A07566C41C96159900B4BF65 /* Info.plist */,
 				A092FB651C974064003B1879 /* Character.swift */,
 				A080B73B1C98A11C000CF337 /* Player.swift */,
+				A0799CF51C9B232B002F85B6 /* Enemy.swift */,
+				A07547B51C9F299A00C6EEAF /* Kimara.swift */,
+				A07547B71C9F29E900C6EEAF /* DevilWizard.swift */,
 			);
 			path = FinalAttack;
 			sourceTree = "<group>";
@@ -143,6 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A080B73C1C98A11C000CF337 /* Player.swift in Sources */,
+				A0799CF61C9B232B002F85B6 /* Enemy.swift in Sources */,
+				A07547B81C9F29E900C6EEAF /* DevilWizard.swift in Sources */,
+				A07547B61C9F299A00C6EEAF /* Kimara.swift in Sources */,
 				A092FB661C974064003B1879 /* Character.swift in Sources */,
 				A07566BB1C96159900B4BF65 /* ViewController.swift in Sources */,
 				A07566B91C96159900B4BF65 /* AppDelegate.swift in Sources */,
