@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enemyHPLbl: UILabel!
     @IBOutlet weak var playerHPLbl: UILabel!
     
+    @IBOutlet weak var Restartbtn: UIButton!
     @IBOutlet weak var enemyAttckBtn: UIButton!
     @IBOutlet weak var playerAttckBtn: UIButton!
     
@@ -32,10 +33,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         updatePlayerHPLbl()
         updateEnemyHPLbl()
+        GenerateCharacters()
+        Restartbtn.hidden = true
         printLbl.text = "Press attack!"
         
-        player = Player(playerName: "ABS", HP: playerHP, AttckPower: 20)
-        enemy = Kimara(enemyName: "Dex", HP: enemyHP, AttckPower: 20)
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -60,6 +63,9 @@ class ViewController: UIViewController {
         
         if !player.isAlive {
             playerImage.hidden = true
+            enemyAttckBtn.enabled = false
+            playerAttckBtn.enabled = false
+            Restartbtn.hidden = false
             printLbl.text = "\(enemy.EnemyName) won the game!!!!!!"
         }
     }
@@ -84,9 +90,29 @@ class ViewController: UIViewController {
         
         if !enemy.isAlive {
             enemyImage.hidden = true
+            enemyAttckBtn.enabled = false
+            playerAttckBtn.enabled = false
+            Restartbtn.hidden = false
             printLbl.text = "\(player.PlayerName) won the game!!!!!"
         }
     }
+    
+    @IBAction func onRestartPressed(sender: AnyObject) {
+        updatePlayerHPLbl()
+        updateEnemyHPLbl()
+        GenerateCharacters()
+        playerAttckBtn.enabled = true
+        enemyAttckBtn.enabled = true
+        playerImage.hidden = false
+        enemyImage.hidden = false
+        Restartbtn.hidden = true
+    }
+    
+    func GenerateCharacters() {
+        player = Player(playerName: "ABS", HP: playerHP, AttckPower: 20)
+        enemy = Kimara(enemyName: "Dex", HP: enemyHP, AttckPower: 20)
+    }
+    
     
     func generateHP() -> Int? {
         let count = Int(arc4random_uniform(UInt32(HP.count)))

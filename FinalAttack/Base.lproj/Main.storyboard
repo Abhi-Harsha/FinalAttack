@@ -107,12 +107,24 @@
                                 <color key="textColor" red="0.93732895729665289" green="1" blue="0.89232788050272926" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.2870680703293319" green="1" blue="0.18527540905313511" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2d-7A-Zy4" userLabel="Restart">
+                                <rect key="frame" x="151" y="115" width="299" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cPc-JP-0po"/>
+                                </constraints>
+                                <state key="normal" image="Restart-Game"/>
+                                <connections>
+                                    <action selector="onRestartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="28Y-Gx-TAA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zvx-T1-gDh" firstAttribute="centerX" secondItem="Dtp-g1-DVE" secondAttribute="centerX" id="0LF-oq-gch"/>
                             <constraint firstItem="Zoh-nS-sp1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3lV-k4-xju"/>
                             <constraint firstItem="sQO-vl-VBY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="100" id="4gX-uB-u0s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q2d-7A-Zy4" secondAttribute="trailing" constant="130" id="515-Tt-qNz"/>
+                            <constraint firstItem="q2d-7A-Zy4" firstAttribute="top" secondItem="aJl-Rn-wcF" secondAttribute="bottom" constant="20" id="5NX-Zk-8te"/>
                             <constraint firstItem="zvx-T1-gDh" firstAttribute="bottom" secondItem="Dtp-g1-DVE" secondAttribute="bottom" id="6aM-OY-uDj"/>
                             <constraint firstItem="Okw-AE-zkA" firstAttribute="top" secondItem="Tsy-Nw-DnG" secondAttribute="bottom" id="9kq-2M-03t"/>
                             <constraint firstItem="AdE-y9-Hbp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ad3-RN-Zdh"/>
@@ -135,12 +147,14 @@
                             <constraint firstItem="aJl-Rn-wcF" firstAttribute="leading" secondItem="AdE-y9-Hbp" secondAttribute="leading" id="jJL-qT-u9J"/>
                             <constraint firstItem="Wok-2I-Tsz" firstAttribute="top" secondItem="aJl-Rn-wcF" secondAttribute="bottom" constant="10" id="joN-zP-15a"/>
                             <constraint firstItem="aJl-Rn-wcF" firstAttribute="top" secondItem="AdE-y9-Hbp" secondAttribute="top" constant="10" id="lpB-tC-AyX"/>
+                            <constraint firstItem="q2d-7A-Zy4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="131" id="mJP-ng-0Ds"/>
                             <constraint firstItem="zvx-T1-gDh" firstAttribute="trailing" secondItem="Dtp-g1-DVE" secondAttribute="trailing" id="oud-qq-lRI"/>
                             <constraint firstAttribute="bottom" secondItem="sQO-vl-VBY" secondAttribute="bottom" constant="55" id="qmp-y3-CG5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zoh-nS-sp1" secondAttribute="bottom" id="qxe-Bw-5MR"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Restartbtn" destination="q2d-7A-Zy4" id="p7l-WY-9Oo"/>
                         <outlet property="enemyAttckBtn" destination="2XK-Xi-sOV" id="F7f-1u-7Ue"/>
                         <outlet property="enemyHPLbl" destination="yIe-hC-MMk" id="IKr-pa-ogO"/>
                         <outlet property="enemyImage" destination="Tsy-Nw-DnG" id="IST-QT-K78"/>
@@ -158,6 +172,7 @@
     <resources>
         <image name="EnemyAttackImage" width="414" height="100"/>
         <image name="PlayerAttackImage" width="414" height="100"/>
+        <image name="Restart-Game" width="704" height="92"/>
         <image name="bg" width="1024" height="677"/>
         <image name="enemy" width="241" height="348"/>
         <image name="ground" width="1024" height="106"/>
